@@ -1,2 +1,116 @@
 # ERGP
 The Prime Repository for the Emirati Reference Genome Project
+
+
+# Emirati Reference Genome Project — Pangenome
+
+A chromosome-level, phased human pangenome reference built from 58 high-quality genome assemblies representing the Emirati population. The dataset comprises one near-complete female reference assembly (ERG-XX) generated from HiFi and ultra-long ONT sequencing, and 57 HiFi-based chromosome-level assemblies spanning 27 trio individuals and 30 unrelated individuals. Pangenome graph construction, variant genotyping, and population analyses are described in:
+
+> **[Manuscript citation placeholder]**
+
+All assemblies and the pangenome graph are available under controlled access via the European Genome-phenome Archive (EGA); see [Data Availability](#data-availability).
+
+---
+
+## Table of Contents
+
+- [Data Availability](#data-availability)
+- [Analysis Pipelines](#analysis-pipelines)
+  - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
+  - [GWAS Linkage Disequilibrium Analysis](#gwas-linkage-disequilibrium-analysis)
+  - [Assembly QC and Annotation](#assembly-qc-and-annotation)
+  - [Population Structure](#population-structure)
+- [External Resources](#external-resources)
+  - [Reference Genomes](#reference-genomes)
+  - [Benchmark Datasets](#benchmark-datasets)
+  - [Pangenome Graph Resources](#pangenome-graph-resources)
+
+---
+
+## Data Availability
+
+New data generated in this study — Emirati T2T assemblies, trio assemblies, single-individual assemblies, and the Emirati pangenome graph — are available under controlled access upon publication via the European Genome-phenome Archive (EGA):
+
+| Resource | EGA Accession |
+|---|---|
+| Study | EGAS50000001232 – EGAS50000001235 |
+| Dataset | EGAD50000001753 – EGAD50000001756 |
+| Sample/Analysis | EGAZ50000006419 – EGAZ50000006422 |
+
+Access requests: https://ega-archive.org
+
+---
+
+## Analysis Pipelines
+
+### Pangenome Graph Genotyping
+
+**Repository:** https://github.com/lbartels7/emirati_pangenie
+
+PanGenie-based variant genotyping of 119 Emirati individuals (Emirates Reference Genome Project; PMID: 33968136) and 828 individuals from 54 populations in the Human Genome Diversity Project (HGDP; PMID: 32193295). Genotyping was performed against both the ERGP pangenome graph and the HPRC v1.1 graph. Includes the full workflow for reference panel preparation (`pangenie-prepare`) and biallelic conversion.
+
+Tools: PanGenie (PMID: 35410384), vcfbub, AnnotSV (PMID: 29669011)
+
+---
+
+### GWAS Linkage Disequilibrium Analysis
+
+**Repository:** https://github.com/iwohlers/2026_pangenome_gwas_ld
+
+Identification of ERGP structural variants in linkage disequilibrium (R² ≥ 0.8) with GWAS Catalog positions (≥5 reported associations per trait) in the genotyped Emirati and HGDP cohorts. SV sites annotated with AnnotSV and GWAS Catalog metadata.
+
+Tools: AnnotSV (PMID: 29669011), GWAS Catalog v1.0.2
+
+---
+
+### Assembly QC and Annotation
+
+**Repository:** [placeholder]
+
+Assembly quality evaluation including contiguity metrics (auN, N50), base-level accuracy (QV), assembly gap fraction, scaffold classification (Logsdon et al. 2025 T2T framework), centromere HOR array recovery, and liftover-based gene annotation (Liftoff, LiftOn, miniprot).
+
+---
+
+### Population Structure
+
+**Repository:** [placeholder]
+
+ADMIXTURE-based ancestry component analysis and PCA. Representativeness assessment of the 58-individual pangenome cohort against the broader Emirati Variome cohort (n = 43,609) via multivariate permutation testing.
+
+---
+
+## External Resources
+
+### Reference Genomes
+
+| Resource | Link |
+|---|---|
+| T2T-CHM13v2.0 | https://github.com/marbl/CHM13 |
+| GRCh38 (Ensembl release 113) | https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna |
+
+### Benchmark Datasets
+
+| Resource | Link |
+|---|---|
+| GIAB short reads (HG001–HG007) | https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/ |
+| GIAB long reads (HG001–HG007) | https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=NHGRI_UCSC_panel/ |
+| GIAB truth sets | https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ |
+
+### Pangenome Graph Resources
+
+| Resource | Link |
+|---|---|
+| HPRC pangenome resources | https://github.com/human-pangenomics/hpp_pangenome_resources |
+| HPRC v1.1 graph (GRCh38) | https://s3-us-west-2.amazonaws.com/human-pangenomics/pangenomes/freeze/freeze1/minigraph-cactus/hprc-v1.1-mc-grch38/hprc-v1.1-mc-grch38.raw.vcf.gz |
+| PanGenie genotyping pipeline | https://github.com/eblerjana/genotyping-pipelines/tree/main/prepare-vcf-MC |
+| PanGenie biallelic conversion script | https://bitbucket.org/jana_ebler/hprc-experiments/src/master/genotyping-experiments/workflow/scripts/convert-to-biallelic.py |
+
+---
+
+## Citation
+
+If you use data or code from this project, please cite:
+
+> **[Manuscript citation placeholder]**
+
+And the relevant tool references listed in each pipeline section above.

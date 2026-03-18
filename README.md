@@ -16,6 +16,9 @@ All assemblies and the pangenome graph are available under controlled access via
 
 - [Data Availability](#data-availability)
 - [Pangenome Construction](#pangenome-construction)
+  - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
+  - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
+  - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
 - [Analysis Pipelines](#analysis-pipelines)
   - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
   - [GWAS Linkage Disequilibrium Analysis](#gwas-linkage-disequilibrium-analysis)
@@ -45,9 +48,9 @@ Access requests: https://ega-archive.org
 ## Pangenome Construction
 We constructed the Emirati pangenome graph using the following three-stage framework:
 
-1. **[UAE-PG-Assembly](https://github.com/BTC-Lab/UAE-PG-Assembly)**: Generates phased, chromosome-level assemblies from HiFi data.
-2. **[UAE-PG-GraphProcessing](https://github.com/BTC-Lab/UAE-PG-GraphProcessing)**: Normalizes, indexes, and merges assemblies into a unified pangenome graph.
-3. **[UAE-PG-GraphCalling](https://github.com/BTC-Lab/UAE-PG-GraphCalling)**: Performs variant calling and verification directly on the pangenome graph.
+### 1. Pangenome Assembly: Generates phased, chromosome-level assemblies from HiFi data. **[Repository](https://github.com/BTC-Lab/UAE-PG-Assembly)**
+### 2. Pangenome Graph Processing: Normalizes, indexes, and merges assemblies into a unified pangenome graph. **[Repository](https://github.com/BTC-Lab/UAE-PG-GraphProcessing)**
+### 3. Pangenome Graph Calling: Performs variant calling and verification directly on the pangenome graph. **[Repository](https://github.com/BTC-Lab/UAE-PG-GraphCalling)**
 
 ---
 

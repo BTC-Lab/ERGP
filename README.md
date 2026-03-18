@@ -17,6 +17,8 @@ All assemblies and the pangenome graph are available under controlled access via
 - [Data Availability](#data-availability)
 - [Pangenome Construction](#pangenome-construction)
   - [Pangenome Assembly](#1-pangenome-assembly) 
+  - [Pangenome Graph Processing](#2-pangenome-graph-processing) 
+  - [Pangenome Graph Calling](#3-pangenome-graph-calling) 
 - [Analysis Pipelines](#analysis-pipelines)
   - [Pangenome Graph Genotyping](#pangenome-graph-genotyping)
   - [GWAS Linkage Disequilibrium Analysis](#gwas-linkage-disequilibrium-analysis)
@@ -52,7 +54,8 @@ Generates phased, chromosome-level assemblies from HiFi data. **[UAE-PG-Assembly
 ### 2. Pangenome Graph Processing: 
 Normalizes, indexes, and merges assemblies into a unified pangenome graph. **[UAE-PG-GraphProcessing](https://github.com/BTC-Lab/UAE-PG-GraphProcessing)**
 
-### 3. Pangenome Graph Calling: Performs variant calling and verification directly on the pangenome graph. **[UAE-PG-GraphCalling](https://github.com/BTC-Lab/UAE-PG-GraphCalling)**
+### 3. Pangenome Graph Calling:
+Performs variant calling and verification directly on the pangenome graph. **[UAE-PG-GraphCalling](https://github.com/BTC-Lab/UAE-PG-GraphCalling)**
 
 ---
 

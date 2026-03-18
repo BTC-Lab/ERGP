@@ -76,7 +76,7 @@ Tools: PanGenie (PMID: 35410384), vcfbub, AnnotSV (PMID: 29669011)
 
 **Repository:** https://github.com/iwohlers/2026_pangenome_gwas_ld
 
-Identification of ERGP structural variants in linkage disequilibrium (R² ≥ 0.8) with GWAS Catalog positions (≥5 reported associations per trait) in the genotyped Emirati and HGDP cohorts. SV sites annotated with AnnotSV and GWAS Catalog metadata.
+Identification of ERGP structural variant sites in linkage disequilibrium (R² ≥ 0.8) with GWAS Catalog positions (≥5 reported associations per trait) in the genotyped Emirati and HGDP cohorts. SV sites annotated with AnnotSV and GWAS Catalog metadata.
 
 Tools: AnnotSV (PMID: 29669011), GWAS Catalog v1.0.2
 
